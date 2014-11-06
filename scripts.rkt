@@ -1,7 +1,6 @@
 #lang racket/base
-
-(require racket/match)
-(require "base.rkt")
+(require racket/match
+         "base.rkt")
 
 (define-script 3d-point
   (match-lambda

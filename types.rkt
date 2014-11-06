@@ -1,5 +1,4 @@
 #lang racket/base
-
 (require "base.rkt")
 
 (define-type long "long")

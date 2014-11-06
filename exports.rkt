@@ -1,5 +1,4 @@
 #lang racket/base
-
 (require "base.rkt")
 
 (define-export start 2d-point (cons 0.0 0.0))

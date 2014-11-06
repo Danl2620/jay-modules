@@ -17,6 +17,7 @@
      (syntax/loc stx
        (begin (hash-set! TYPES 'n (cons 't1 't2))))]))
 
+(provide make-header)
 (define (make-header)
   (printf "Header =\n")
   (for ([(n t) (in-hash TYPES)])
@@ -66,6 +67,7 @@
              (hash-set! EXPORTS 'n vi)
              (display-problems 'n problems))))]))
 
+(provide make-blob)
 (define (make-blob)
   (printf "Blob =\n")
   (for ([(n v) (in-hash EXPORTS)]
