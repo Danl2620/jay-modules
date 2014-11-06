@@ -1,0 +1,5 @@
+This is the basic global model that ignores Racket's module system and
+offers no protection between different sources of types/exports/scripts.
+
+It is unrealistic relative to the real system primarily in the
+scripts, which are boring functions rather than macros.
