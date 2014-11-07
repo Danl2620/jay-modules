@@ -1,9 +1,6 @@
-#lang racket/base
-(require racket/match
-         "base.rkt")
+#lang s-exp "../lang/main.rkt"
+(require racket/match)
 
 (define-script 3D-point
-  (match-lambda
-   [(list _ x y z) (cons '#%datum (cons (cons x y) z))]))
-
-(provide (all-defined-out))
+  (λ (x y z)
+    (cons (cons x y) z)))
