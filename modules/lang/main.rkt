@@ -3,6 +3,10 @@
                      syntax/parse)
          "../lib/base.rkt")
 
+;; The only purpose of this is to (a) make sure that every DC module
+;; has the right submodules and (b) make sure that the DC code has the
+;; right imports. Nothing exciting going on.
+
 (define-syntax (:module-begin stx)
   (syntax-parse stx
     [(_ body ...)
